@@ -13,36 +13,9 @@
             'aside main main';
 }
 
-.header {
-    background-color: #5f7255;
-    padding: 10px;
-    grid-area: header;
-}
-
-.header img {
-    display: block;
-    width: 80px;
-    height: 80px;
-}
-
-.aside {
-    padding: 10px;
-    background-color: #5f7255;
-
-    grid-area: aside;
-}
-
 .main {
     background-color: #5f7255;
     grid-area: main;
 }
 
 
-.profile__img{
-    margin-bottom: 20px;
-    width: 100%;
-}
-.profile__img img {
-    display: block;
-    width: 100%;
-}

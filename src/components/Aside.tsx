@@ -1,8 +1,10 @@
 import React from 'react';
 
+import s from './aside.module.css'
+
 function Aside() {
     return (
-        <aside className="aside">
+        <aside className={s.aside}>
             <nav>
                 <ul>
                     <li><a href="/">Profile</a></li>

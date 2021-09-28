@@ -1,0 +1,6 @@
+.aside {
+    padding: 10px;
+    background-color: #5f7255;
+
+    grid-area: aside;
+}
