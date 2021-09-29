@@ -1,6 +1,9 @@
 import React from 'react';
 
-import s from './profile.module.css'
+import s from './profile.module.css';
+
+import MyPosts from "./MyPosts/MyPosts";
+
 
 function Profile() {
   return (
@@ -8,6 +11,8 @@ function Profile() {
       <div className={s.img}>
         <img src="https://source.unsplash.com/random/1600x900" alt="img"/>
       </div>
+
+        <MyPosts/>
     </div>
   );
 }
