@@ -1,0 +1,11 @@
+.link {
+    font-size: 24px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+.link.active {
+    color: tomato;
+}

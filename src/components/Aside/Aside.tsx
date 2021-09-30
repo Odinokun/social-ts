@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import 'normalize.css';
 import s from './aside.module.css'
@@ -8,12 +8,22 @@ function Aside() {
     return (
         <aside className={s.aside}>
             <nav>
-                <ul>
-                    <li><Link to="/profile">Profile</Link></li>
-                    <li><Link to="/dialogs">Messages</Link></li>
-                    <li><Link to="/news">News</Link></li>
-                    <li><Link to="/music">Music</Link></li>
-                    <li><Link to="/settings">Settings</Link></li>
+                <ul className={s.aside__list}>
+                    <li className={s.item}>
+                        <NavLink className={s.aside__link} to="/profile" activeClassName={s.active}>Profile</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink className={s.aside__link} to="/dialogs" activeClassName={s.active}>Messages</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink className={s.aside__link} to="/news" activeClassName={s.active}>News</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink className={s.aside__link} to="/music" activeClassName={s.active}>Music</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink className={s.aside__link} to="/settings" activeClassName={s.active}>Settings</NavLink>
+                    </li>
                 </ul>
             </nav>
         </aside>
