@@ -3,6 +3,7 @@ import React from 'react';
 import s from './dialogs.module.css';
 
 import Dialog from "./Dialog/Dialog";
+import Message from "./Message/Message";
 
 function Dialogs() {
     return (
@@ -19,10 +20,14 @@ function Dialogs() {
 
             <div className={s.messages}>
                 <ul className={s.messages__list}>
-                    <li className={s.messages__item}>Hello! First message</li>
-                    <li className={s.messages__item}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste labore laboriosam necessitatibus nemo, nostrum nulla officia soluta tenetur? Exercitationem, repellat.</li>
-                    <li className={s.messages__item}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                    <li className={s.messages__item}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam animi beatae commodi doloremque in molestias necessitatibus numquam perspiciatis quasi. Doloremque et exercitationem omnis tempore. Adipisci architecto cupiditate distinctio fugiat harum id magnam modi, non qui recusandae, tempora unde voluptas?</li>
+                    <Message message="Hello! First message"/>
+                    <Message message="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste labore laboriosam necessitatibus nemo, nostrum nulla officia soluta tenetur? Exercitationem, repellat."/>
+                    <Message message="Lorem ipsum dolor sit amet, consectetur adipisicing elit."/>
+                    <Message message="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste labore laboriosam necessitatibus nemo, nostrum nulla officia soluta tenetur? Exercitationem, repellat."/>
+                    <Message message="Lorem ipsum dolor sit amet, consectetur adipisicing elit."/>
+                    <Message message="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam animi beatae commodi doloremque in molestias necessitatibus numquam perspiciatis quasi. Doloremque et exercitationem omnis tempore. Adipisci architecto cupiditate distinctio fugiat harum id magnam modi, non qui recusandae, tempora unde voluptas?"/>
+                    <Message message="Lorem ipsum dolor sit amet, consectetur adipisicing elit."/>
+                    <Message message="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam animi beatae commodi doloremque in molestias necessitatibus numquam perspiciatis quasi. Doloremque et exercitationem omnis tempore. Adipisci architecto cupiditate distinctio fugiat harum id magnam modi, non qui recusandae, tempora unde voluptas?"/>
                 </ul>
             </div>
         </div>
