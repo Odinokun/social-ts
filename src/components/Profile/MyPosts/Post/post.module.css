@@ -20,8 +20,14 @@
     object-fit: cover;
     object-position: center;
 }
+
 i {
     display: block;
     margin: 10px 0 0 0;
     cursor: pointer;
+    padding-right: 10px;
+}
+
+.footer {
+    display: flex;
 }
