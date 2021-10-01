@@ -1,4 +1,6 @@
-let state = {
+
+
+export let state = {
   posts: [
     {
       id: 1,
@@ -63,5 +65,3 @@ let state = {
     }
   ]
 }
-
-export default state;

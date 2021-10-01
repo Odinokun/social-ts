@@ -1,7 +1,6 @@
 import React from 'react';
 
 import s from './my-posts.module.css'
-import postsData from "../../../helpers/posts.helper";
 
 import Post from "./Post/Post";
 
@@ -13,9 +12,9 @@ function MyPosts() {
                 <button>Add post</button>
             </form>
 
-            {postsData.map((item) => (
-                <Post message={item.message} likes={item.likes} key={item.id}/>
-            ))}
+            {/*{postsData.map((item) => (*/}
+            {/*    <Post message={item.message} likes={item.likes} key={item.id}/>*/}
+            {/*))}*/}
         </div>
     );
 }
