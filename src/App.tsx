@@ -11,14 +11,19 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 
-function App() {
-    debugger
+type AppPropsType = {
+    appState: object
+}
+
+function App(props: AppPropsType) {
     return (
         <div className="wrapper">
             <Header/>
             <Aside/>
             <main className="main">
-                <Route path="/profile" component={Profile}/>
+                <Route path="/profile" render={
+                    () => <Profile posts={props}/>
+                }/>
                 <Route path="/dialogs" component={Dialogs}/>
                 <Route path="/news" component={News}/>
                 <Route path="/music" component={Music}/>
