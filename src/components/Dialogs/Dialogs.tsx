@@ -1,25 +1,27 @@
 import React from 'react';
 
 import s from './dialogs.module.css';
-// import dialogsData from "../../helpers/dialogs.helper";
-// import messagesData from "../../helpers/messages.helper";
 
 import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
+import {DialogsPageType} from "../../redux/state";
 
-function Dialogs() {
-    return (
+const Dialogs: React.FC<DialogsPageType> = (props) => {
+
+    let dialogsElements = props.dialogs.map((item) =>
+        <Dialog name={item.name} id={item.id} key={item.id} />
+    )
+
+    let messagesElements = props.messages.map((item) =>
+        <Message message={item.message} key={item.id}/>
+    )
+
+    return(
         <div className={s.wrap}>
             <div className={s.dialogs}>
                 <ul className={s.dialogs__list}>
 
-                    {/*{dialogsData.map((item) => (*/}
-                    {/*    <Dialog*/}
-                    {/*        name={item.name}*/}
-                    {/*        link={item.id}*/}
-                    {/*        key={item.id}*/}
-                    {/*    />*/}
-                    {/*))}*/}
+                    {dialogsElements}
 
                 </ul>
             </div>
@@ -27,17 +29,13 @@ function Dialogs() {
             <div className={s.messages}>
                 <ul className={s.messages__list}>
 
-                    {/*{messagesData.map((item) => (*/}
-                    {/*    <Message*/}
-                    {/*        message={item.message}*/}
-                    {/*        key={item.id}*/}
-                    {/*    />*/}
-                    {/*))}*/}
+                    {messagesElements}
 
                 </ul>
             </div>
         </div>
     )
 }
+;
 
 export default Dialogs;
