@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import 'normalize.css';
 import s from './aside.module.css'
 
 function Aside() {

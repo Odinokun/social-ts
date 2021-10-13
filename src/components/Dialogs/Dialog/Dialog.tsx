@@ -11,7 +11,8 @@ type DialogPropsType = {
 function Dialog(props: DialogPropsType) {
     return (
         <li>
-            <NavLink className={s.link} to={"/dialogs/" + props.id} activeClassName={s.active}>
+            <NavLink className={s.link} to={"/dialogs/" + props.id}
+                     activeClassName={s.active}>
                 {props.name}
             </NavLink>
         </li>

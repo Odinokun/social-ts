@@ -3,6 +3,7 @@ import {Route} from "react-router-dom";
 
 import {RootStateType} from "./redux/state";
 
+import 'normalize.css';
 import './App.css';
 
 import Header from "./components/Header/Header";

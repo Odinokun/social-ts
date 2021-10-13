@@ -8,7 +8,6 @@ export type ProfilePageType = {
     posts: Array<PostType>
 }
 
-
 export type MessageType = {
     id: number,
     message: string,
